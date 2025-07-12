@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #f4f4f4;
+  color: #1a1a1a;
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+  background: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 20px;
+}
+
+.feature-box {
+  flex: 1 1 30%;
+  background: #f4f4f4;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 100%;
+  }
+}
